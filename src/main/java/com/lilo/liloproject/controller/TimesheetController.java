@@ -1,5 +1,5 @@
 /**
- * Author: Aviv Guese, Nicole Estoista
+ * Author: Aviv Guese, Nicole Es
  *
  *  API Endpoint called to retrieve timesheet lists and timesheets. This controller is also
  *  used to download timesheets
