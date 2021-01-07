@@ -108,7 +108,7 @@ public class TimesheetController extends APIController {
 
         User user = (User) authentication.getPrincipal();
         UserDetails userDetails = userDetailsService.getUserDetails(user.getLoginId());
-        Resource resource = resourceService.getResource(user.getId());
+//        Resource resource = resourceService.getResource(user.getId());
 
 
 
