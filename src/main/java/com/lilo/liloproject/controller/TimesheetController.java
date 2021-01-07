@@ -124,7 +124,7 @@ public class TimesheetController extends APIController {
         employeeDTO.setImmediateSuperVisor(resource.getImmediateManagerName());
         //set department
         if (StringUtils.isEmpty(employeeDTO.getEmployeeID().trim())) {
-            log.error("Cannot process request");
+//            log.error("Cannot process request");
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Cannot process request");
         }
 
@@ -147,7 +147,7 @@ public class TimesheetController extends APIController {
                     .body(new InputStreamResource(in));
 
         } catch (UnsupportedOperationException e) {
-            log.error("No employee found");
+//            log.error("No employee foundnd");
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "No employee found");
         }
     }
